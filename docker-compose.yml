@@ -35,6 +35,8 @@ services:
             RABBITMQ_DEFAULT_PASS: guest
         volumes:
             - rabbitmq_data:/var/lib/rabbitmq
+        networks:
+            - sail
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
