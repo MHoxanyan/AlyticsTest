@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('retry')->default(0);
             $table->integer('retry_frequency')->nullable();
             $table->datetime('last_checked_at')->nullable();
-            $table->integer('status')->integer('1');
+            $table->integer('status')->default(1);
             $table->timestamps();
         });
     }
